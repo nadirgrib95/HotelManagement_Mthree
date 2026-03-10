@@ -1,0 +1,27 @@
+.cm-table th,
+.cm-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form-control {
+  display: inline-block;
+  width: 80%;
+}
+
+.room-select {
+  display: inline-block;
+  width: 80%;
+}
+
+.btn-payment-status {
+  color: black;
+  font-weight: bold;
+}
+
+.table-success {
+  span {
+    display: inline-block;
+    width: 70%;
+  }
+}

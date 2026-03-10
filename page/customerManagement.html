@@ -15,8 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/customerManagementStyle.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <!-- Navbar -->
       <nav class="navbar navbar-expand">
@@ -61,6 +63,618 @@
       </nav>
       <!-- Navbar -->
     </header>
+
+    <section class="customerManagement">
+      <div class="py-5 mx-5">
+        <div class="row align-items-center mx-0 mb-4">
+          <h1
+            class="col-10 justify-content-start align-content-center mb-0 px-0"
+          >
+            Customer Management
+          </h1>
+          <button
+            type="button"
+            class="col-2 btn btn-primary justify-content-end align-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#addCustomerModal"
+          >
+            + Add New Customer
+          </button>
+        </div>
+        <div class="mb-5 px-0">
+          <div class="accordion" id="newCustomersAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="newCustomersHeader">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#newCustomersCollapse"
+                  aria-expanded="true"
+                  aria-controls="newCustomersCollapse"
+                >
+                  <h4 class="m-0">New Customers</h4>
+                </button>
+              </h2>
+              <div
+                id="newCustomersCollapse"
+                class="accordion-collapse collapse show"
+                aria-labelledby="newCustomersHeader"
+              >
+                <div class="table-responsive">
+                  <table class="table align-middle cm-table mb-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Home Address</th>
+                        <th>Booking ID</th>
+                        <th>Booking Date</th>
+                        <th>Check-in Date</th>
+                        <th>Check-out Date</th>
+                        <th>Room Number</th>
+                        <th>Total Amount</th>
+                        <th>Payment Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-warning">
+                        <td>C001</td>
+                        <td>Alice Brown</td>
+                        <td>alice.brown@email.com</td>
+                        <td>+1 514-555-0101</td>
+                        <td>Montreal, QC</td>
+                        <td>B1001</td>
+                        <td>2026-03-10</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-15"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-18"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="204"
+                          ></select>
+                        </td>
+                        <td>$540.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PARTIAL"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C002</td>
+                        <td>Charlie Davis</td>
+                        <td>charlie.davis@email.com</td>
+                        <td>+1 438-555-0102</td>
+                        <td>Laval, QC</td>
+                        <td>B1002</td>
+                        <td>2026-03-11</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-20"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-23"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="112"
+                          ></select>
+                        </td>
+                        <td>$720.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr class="table-danger">
+                        <td>C003</td>
+                        <td>Eve Wilson</td>
+                        <td>eve.wilson@email.com</td>
+                        <td>+1 450-555-0103</td>
+                        <td>Longueuil, QC</td>
+                        <td>B1003</td>
+                        <td>2026-03-12</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-25"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-28"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="310"
+                          ></select>
+                        </td>
+                        <td>$630.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="UNPAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>C010</td>
+                        <td>Olivia Martin</td>
+                        <td>olivia.martin@email.com</td>
+                        <td>+1 579-555-0110</td>
+                        <td>Westmount, QC</td>
+                        <td>B1010</td>
+                        <td>2026-03-12</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-18"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-21"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="214"
+                          ></select>
+                        </td>
+                        <td>$845.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PARTIAL"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C011</td>
+                        <td>Liam Robinson</td>
+                        <td>liam.robinson@email.com</td>
+                        <td>+1 367-555-0111</td>
+                        <td>Brossard, QC</td>
+                        <td>B1011</td>
+                        <td>2026-03-13</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-19"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-22"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="119"
+                          ></select>
+                        </td>
+                        <td>$675.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 px-0">
+          <div class="accordion" id="currentCustomersAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="currentCustomersHeader">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#currentCustomersCollapse"
+                  aria-expanded="true"
+                  aria-controls="currentCustomersCollapse"
+                >
+                  <h4 class="m-0">Current Customers</h4>
+                </button>
+              </h2>
+              <div
+                id="currentCustomersCollapse"
+                class="accordion-collapse collapse show"
+                aria-labelledby="currentCustomersHeader"
+              >
+                <div class="table-responsive">
+                  <table class="table align-middle cm-table mb-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Home Address</th>
+                        <th>Booking ID</th>
+                        <th>Booking Date</th>
+                        <th>Check-in Date</th>
+                        <th>Check-out Date</th>
+                        <th>Room Number</th>
+                        <th>Total Amount</th>
+                        <th>Payment Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>C004</td>
+                        <td>John Doe</td>
+                        <td>john.doe@email.com</td>
+                        <td>+1 514-555-0104</td>
+                        <td>Montreal, QC</td>
+                        <td>B1004</td>
+                        <td>2026-03-01</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-08"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-12"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="101"
+                          ></select>
+                        </td>
+                        <td>$800.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>C005</td>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@email.com</td>
+                        <td>+1 438-555-0105</td>
+                        <td>Quebec City, QC</td>
+                        <td>B1005</td>
+                        <td>2026-03-03</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-09"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-13"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="203"
+                          ></select>
+                        </td>
+                        <td>$680.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PARTIAL"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C006</td>
+                        <td>Bob Johnson</td>
+                        <td>bob.johnson@email.com</td>
+                        <td>+1 450-555-0106</td>
+                        <td>Sherbrooke, QC</td>
+                        <td>B1006</td>
+                        <td>2026-03-05</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-10"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-14"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="305"
+                          ></select>
+                        </td>
+                        <td>$760.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr class="table-danger">
+                        <td>C012</td>
+                        <td>Nora Bennett</td>
+                        <td>nora.bennett@email.com</td>
+                        <td>+1 579-555-0112</td>
+                        <td>Trois-Rivieres, QC</td>
+                        <td>B1012</td>
+                        <td>2026-03-06</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-10"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-16"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="333"
+                          ></select>
+                        </td>
+                        <td>$1,020.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="UNPAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C013</td>
+                        <td>Mason Turner</td>
+                        <td>mason.turner@email.com</td>
+                        <td>+1 367-555-0113</td>
+                        <td>Montreal, QC</td>
+                        <td>B1013</td>
+                        <td>2026-03-07</td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-11"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2026-03-15"
+                          />
+                        </td>
+                        <td>
+                          <select
+                            class="form-select form-select-sm room-select"
+                            data-current-room="127"
+                          ></select>
+                        </td>
+                        <td>$790.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 px-0">
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#oldCustomersCollapse"
+                >
+                  <h4 class="m-0">Old Customers</h4>
+                </button>
+              </h2>
+              <div
+                id="oldCustomersCollapse"
+                class="accordion-collapse collapse show"
+              >
+                <div class="table-responsive">
+                  <table class="table align-middle cm-table mb-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Home Address</th>
+                        <th>Booking ID</th>
+                        <th>Booking Date</th>
+                        <th>Check-in Date</th>
+                        <th>Check-out Date</th>
+                        <th>Room Number</th>
+                        <th>Total Amount</th>
+                        <th>Payment Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>C007</td>
+                        <td>Michael Miller</td>
+                        <td>michael.miller@email.com</td>
+                        <td>+1 514-555-0107</td>
+                        <td>Ottawa, ON</td>
+                        <td>B1007</td>
+                        <td>2026-02-15</td>
+                        <td>2026-02-20</td>
+                        <td>2026-02-25</td>
+                        <td>118</td>
+                        <td>$900.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C008</td>
+                        <td>Sarah Lee</td>
+                        <td>sarah.lee@email.com</td>
+                        <td>+1 438-555-0108</td>
+                        <td>Toronto, ON</td>
+                        <td>B1008</td>
+                        <td>2026-02-10</td>
+                        <td>2026-02-14</td>
+                        <td>2026-02-18</td>
+                        <td>220</td>
+                        <td>$620.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C009</td>
+                        <td>David Anderson</td>
+                        <td>david.anderson@email.com</td>
+                        <td>+1 450-555-0109</td>
+                        <td>Gatineau, QC</td>
+                        <td>B1009</td>
+                        <td>2026-01-22</td>
+                        <td>2026-01-28</td>
+                        <td>2026-02-01</td>
+                        <td>409</td>
+                        <td>$710.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C014</td>
+                        <td>Emma Clark</td>
+                        <td>emma.clark@email.com</td>
+                        <td>+1 579-555-0114</td>
+                        <td>Hamilton, ON</td>
+                        <td>B1014</td>
+                        <td>2025-12-02</td>
+                        <td>2025-12-10</td>
+                        <td>2025-12-14</td>
+                        <td>417</td>
+                        <td>$860.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>C015</td>
+                        <td>Lucas White</td>
+                        <td>lucas.white@email.com</td>
+                        <td>+1 367-555-0115</td>
+                        <td>Mississauga, ON</td>
+                        <td>B1015</td>
+                        <td>2025-11-22</td>
+                        <td>2025-11-28</td>
+                        <td>2025-12-03</td>
+                        <td>402</td>
+                        <td>$945.00</td>
+                        <td>
+                          <select
+                            class="payment-status-select form-select form-select-sm btn-payment-status"
+                            data-current-payment-status="PAID"
+                          ></select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer text-center justify-content-center">
@@ -138,5 +752,6 @@
       <!-- Section: Links  -->
     </footer>
     <!-- Footer -->
+    <script src="/javascript/customerManagement.js"></script>
   </body>
 </html>

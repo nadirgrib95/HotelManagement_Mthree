@@ -19,3 +19,30 @@
         border: 3px solid #fff;
     }
 }
+
+.employee-hero{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    }
+}

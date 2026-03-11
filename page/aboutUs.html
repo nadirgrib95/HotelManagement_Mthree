@@ -90,8 +90,8 @@
         <div class="mt-3 col-md-6 text-center align">
           <h1>Customers First</h1>
           <p>
-            At our hotel, customers always come first. We focus on providing friendly service, quick assistance, 
-            and a welcoming atmosphere for every guest. Our team listens carefully to your needs and works hard to ensure a comfortable, 
+            At our hotel, customers always come first. We focus on providing friendly service, quick assistance,
+            and a welcoming atmosphere for every guest. Our team listens carefully to your needs and works hard to ensure a comfortable,
             enjoyable stay. Your satisfaction matters most, and we are committed to making every visit exceptional.
           <p>
         </div>
@@ -101,8 +101,6 @@
         </div>
       </div>
     </section>
-
-
 
     <section class="container" style="padding: 60px;">
       <div class="m-5">
@@ -115,40 +113,35 @@
       </div>
     </section>
 
-  <section style="padding-bottom: 100px;">
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4">
-          <h2 class="text-center mb-4">Sign up to our Newsletter!</h2>
+    <section style="padding-bottom: 100px;">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <h2 class="text-center mb-4">Sign up to our Newsletter!</h2>
 
-          <form id="emailForm">
-            <div class="form-group mb-3">
-              <label for="email">Enter your email address:</label>
-              <input type="email" class="form-control" id="email" required placeholder="wedabestmusic@djkhaled.com">
+            <form id="emailForm">
+              <div class="form-group mb-3">
+                <label for="email">Enter your email address:</label>
+                <input type="email" class="form-control" id="email" required placeholder="wedabestmusic@djkhaled.com">
+              </div>
+              <button type="submit" class="btn w-100 rounded-pill select-btn" onclick="newsletterSubmit()">
+                <Strong>Submit</Strong>
+              </button>
+            </form>
+
+            <div id="confirmationMessage" class="confirmation-message mt-4 alert alert-success" style="display:none;">
+              <p class="mb-4">Congtrats! You have now signed up to our Newsletter. We'll make sure to keep in touch with your following email: <strong id="userEmail"></strong>
+              <br>
+              <p>Have a good one!</p>
+            </p>
             </div>
-            <button type="submit" class="btn w-100 rounded-pill select-btn" onclick="newsletterSubmit()">
-              <Strong>Submit</Strong>
-            </button>
-          </form>
-
-          <div id="confirmationMessage" class="confirmation-message mt-4 alert alert-success" style="display:none;">
-            <p class="mb-4">Congtrats! You have now signed up to our Newsletter. We'll make sure to keep in touch with your following email: <strong id="userEmail"></strong>
-            <br>
-            <p>Have a good one!</p>
-          </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Bootstrap and jQuery JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="/javascript/aboutUs.js"></script>
-
-
-
- <!-- Footer -->
+    <script src="/javascript/aboutUs.js"></script>
+    <!-- Footer -->
     <footer class="footer text-center justify-content-center pt-4">
       <!-- Section: Links  -->
       <section>

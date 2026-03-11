@@ -51,3 +51,9 @@
   border: none;
 }
 
+.select-btn-secondary:hover {
+  background-color: rgba(230, 30, 67) !important;
+  color: white !important;
+  border: none;
+}
+

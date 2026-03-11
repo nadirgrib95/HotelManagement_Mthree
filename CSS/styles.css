@@ -26,30 +26,6 @@
   }
 }
 
-/* Search Banner */
-
-.search-btn {
-  background-color: rgb(25, 30, 59);
-  color: white;
-}
-
-.search-btn:hover {
-  background-color: rgba(25, 30, 59, 0.8);
-}
-
-
-/* Hotel Cards */
-
-.select-room-btn {
-  background-color: rgb(25, 30, 59);
-  color: white;
-  margin-top: 5px;
-}
-
-.select-room-btn:hover {
-  background-color: rgba(255, 0, 0, 0.7);
-}
-
 .body-section .bg-custom-color{
   background-color: rgb(25, 30, 59);
   color: white;
@@ -60,10 +36,4 @@
   height: clamp(260px, 55vh, 560px);
   object-fit: cover;
   object-position: center;
-}
-
-@media (max-width: 768px) {
-  #carouselExampleAutoplaying .carousel-item img {
-    height: 300px;
-  }
 }

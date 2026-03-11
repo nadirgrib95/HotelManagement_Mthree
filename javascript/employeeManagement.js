@@ -1,46 +1,41 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const accordion = document.getElementById("employeeAccordion");
+  const addForm = document.getElementById("employeeAddForm");
+  const saveBtn = document.getElementById("employeeSaveBtn");
 
-    const accordion = document.getElementById('employeeAccordion');
-    const addForm = document.getElementById('employeeAddForm');
-    const saveBtn = document.getElementById('employeeSaveBtn');
+  accordion.addEventListener("click", (event) => {
+    if (event.target.classList.contains("delete-btn")) {
+      if (confirm("Are you sure you want to remove this entry?")) {
+        const employeeItem = event.target.closest(".accordion-item");
+        employeeItem.remove();
 
-    accordion.addEventListener('click', (event) => {
+        alert("Employee was removed!");
+      }
+    }
+  });
 
-        if (event.target.classList.contains('delete-btn')) {
+  if (saveBtn) {
+    saveBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-            if (confirm('Are you sure you want to remove this entry?')) {
+      const name = document.getElementById("newName").value;
+      const empId = document.getElementById("newIdCode").value;
+      const role = document.getElementById("newRole").value;
+      const email = document.getElementById("newEmail").value;
+      const dept = document.getElementById("newDept").value;
+      const type = document.getElementById("newType").value;
 
-                const employeeItem = event.target.closest('.accordion-item');
-                employeeItem.remove();
+      if (!name) {
+        alert("Please enter a name.");
+        return;
+      }
 
-                alert("Employee was removed!");
-            }
-        }
-    });
+      const collapseId = `employeeCollapse${Date.now()}`;
 
-    if(saveBtn) {
-        saveBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const name = document.getElementById('newName').value;
-            const empId = document.getElementById('newIdCode').value;
-            const role = document.getElementById('newRole').value;
-            const email = document.getElementById('newEmail').value;
-            const dept = document.getElementById('newDept').value;
-            const type = document.getElementById('newType').value;
-
-            if (!name) {
-                alert("Please enter a name.");
-                return;
-            }
-
-
-            const collapseId = `employeeCollapse${Date.now()}`;
-
-            const newItem = `
+      const newItem = `
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill" 
+              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100"
                       type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}">
                 <span class="fs-5">${name}</span>
                 <i class="fas fa-chevron-down"></i>
@@ -67,11 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>`;
 
-            document.getElementById("employeeAccordion").insertAdjacentHTML('beforeend', newItem);
-            addForm.reset();
-
-
-        })
-    }
-
+      document
+        .getElementById("employeeAccordion")
+        .insertAdjacentHTML("beforeend", newItem);
+      addForm.reset();
+    });
+  }
 });

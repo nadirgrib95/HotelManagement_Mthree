@@ -1,15 +1,43 @@
-.about-us-section{
+.contact-us-section{
     min-height: 40vh;
 }
 
-.about-us-submit-btn {
-    background-color: #9CA4FF;
-}
-
-.about-us-submit-btn:hover {
-    background-color: #828BCF;
-}
-
-.about-us-col {
+.contact-us-col {
     background-color: #2E3869;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+.contact-hero {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
 }

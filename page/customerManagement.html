@@ -63,17 +63,43 @@
         </div>
       </div>
     </section>
+
     <section class="customerManagement">
       <div class="py-5 mx-5">
-        <div class="align-items-center mx-0 mb-4 justify-content-end d-flex">
-          <button
-            type="button"
-            class="btn btn-primary align-content-center rounded-pill select-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#addCustomerModal"
-          >
-            + Add New Customer
-          </button>
+        <div class="row d-flex mb-4">
+          <div class="col-3">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Customers By Name, ID, Phone..."
+                aria-label="Search"
+              />
+              <button class="btn select-btn rounded-pill" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="col-9 justify-content-end d-flex">
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill select-btn"
+            >
+              Select All
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill select-btn ms-2"
+            >
+              Send Reminder
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill select-btn ms-2"
+            >
+              + Add New Customer
+            </button>
+          </div>
         </div>
         <div class="mb-5 px-0">
           <div class="accordion" id="newCustomersAccordion">

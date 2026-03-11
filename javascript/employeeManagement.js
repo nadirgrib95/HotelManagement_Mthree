@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newItem = `
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" 
+              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill" 
                       type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}">
                 <span class="fs-5">${name}</span>
                 <i class="fas fa-chevron-down"></i>
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p> <strong>Department:</strong> ${dept}</p>
                     <p> <strong>Employment Type:</strong> ${type}</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button class="btn btn-outline-danger btn-sm delete-btn rounded-pill">Delete Entry</button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">

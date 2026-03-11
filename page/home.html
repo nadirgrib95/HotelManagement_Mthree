@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jph.Com</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -22,19 +23,8 @@
       <nav class="navbar navbar-expand">
         <div class="container-fluid">
           <a class="navbar-brand" href="/page/home.html"
-            ><img src="/images/logo.png"
+            ><img src="/images/logo.png" alt="logo"
           /></a>
-          <button
-            data-mdb-collapse-init
-            class="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
           <div class="collapse navbar-collapse m-auto" id="navbarExample01">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item active">
@@ -62,27 +52,127 @@
       <!-- Navbar -->
     </header>
 
-    <!-- Footer -->
-    <footer class="footer text-center justify-content-center">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      />
+    <section
+      class="body-section search-banner align-items-center justify-content-center"
+    >
+      <!-- Courousel -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/carousel1.png" class="d-block w-100" alt="room" />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/carousel2.png" class="d-block w-100" alt="room" />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/carousel3.png" class="d-block w-100" alt="room" />
+          </div>
+        </div>
+      </div>
 
+      <!-- Welcome Part -->
+      <div class="container text-center py-5">
+        <h1 class="fw-bold mb-4">Welcome to Jay Patel Hotels</h1>
+        <p class="lead mb-4">
+          Experience comfort and hospitality at its finest with us.
+        </p>
+        <a
+          href="/page/roomManagement.html"
+          class="btn btn-primary btn-lg rounded-pill"
+          >See Our Rooms</a
+        >
+      </div>
+
+      <!-- Room Search Banner -->
+      <div class="card p-3 border-0 bg-custom-color py-5">
+        <h1
+          class="fw-bold mb-4 d-flex align-content-center justify-content-center"
+        >
+          Find Your Perfect Stay
+        </h1>
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <label class="form-label" for="checkIn">Check In</label>
+            <input
+              type="date"
+              class="form-control"
+              id="checkIn"
+              name="checkIn"
+            />
+          </div>
+
+          <div class="col-2">
+            <label class="form-label" for="checkOut">Check Out</label>
+            <input
+              type="date"
+              class="form-control"
+              id="checkOut"
+              name="checkOut"
+            />
+          </div>
+
+          <div class="col-2">
+            <label class="form-label" for="guests">Guests</label>
+            <select class="form-select" id="guests" name="guests">
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+            </select>
+          </div>
+
+          <div class="col-1 align-self-end">
+            <button
+              type="button"
+              class="btn search-btn w-100 bg-primary rounded-pill"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Section -->
+      <div class="container text-center py-5">
+        <h1 class="fw-bold mb-4">Are you an admin ?</h1>
+        <p class="lead mb-4">
+          You can manage the hotel right here. Manage your customers, rooms, and
+          employees with ease.
+        </p>
+        <div class="row justify-content-evenly">
+          <a
+            href="/page/customerManagement.html"
+            class="col-3 btn btn-primary btn-lg me-2 rounded-pill"
+            >Manage Customers</a
+          >
+          <a
+            href="/page/employeeManagement.html"
+            class="col-3 btn btn-primary btn-lg rounded-pill"
+            >Manage Employees</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center justify-content-center pt-4">
       <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
+      <section>
+        <div class="container text-center mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-5 mb-4">
               <!-- Content -->
+              <h3 class="text-uppercase fw-bold mb-4">Jay Patel</h3>
+              <h3 class="text-uppercase fw-bold mb-4">Hotels</h3>
               <a class="navbar-brand" href="/page/home.html"
-                ><img src="/images/logo.png"
+                ><img src="/images/logo.png" alt="logo"
               /></a>
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Jay Patels Hotels
-              </h6>
               <p>
                 Stay in comfort at Jay Patels Hotels with modern rooms, friendly
                 service, and a great location for your visit.
@@ -91,44 +181,65 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-2 mb-4 text-md-start">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Menu</h6>
+              <h5 class="text-uppercase fw-bold mb-4 text-decoration-underline">
+                Menu
+              </h5>
               <p>
-                <a href="/page/home.html" class="text-reset">Home</a>
+                <a
+                  href="/page/home.html"
+                  class="text-reset text-decoration-none"
+                  >Home</a
+                >
               </p>
               <p>
-                <a href="/page/customerManagement.html" class="text-reset"
+                <a
+                  href="/page/customerManagement.html"
+                  class="text-reset text-decoration-none"
                   >Customers</a
                 >
               </p>
               <p>
-                <a href="/page/roomManagement.html" class="text-reset">Rooms</a>
+                <a
+                  href="/page/roomManagement.html"
+                  class="text-reset text-decoration-none"
+                  >Rooms</a
+                >
               </p>
               <p>
-                <a href="/page/employeeManagement.html" class="text-reset"
+                <a
+                  href="/page/employeeManagement.html"
+                  class="text-reset text-decoration-none"
                   >Employees</a
                 >
               </p>
               <p>
-                <a href="/page/aboutUs.html" class="text-reset">About Us</a>
+                <a
+                  href="/page/aboutUs.html"
+                  class="text-reset text-decoration-none"
+                  >About Us</a
+                >
               </p>
               <p>
-                <a href="/page/contactUs.html" class="text-reset">Contact Us</a>
+                <a
+                  href="/page/contactUs.html"
+                  class="text-reset text-decoration-none"
+                  >Contact Us</a
+                >
               </p>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-5 mb-4 text-md-start">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> Montreal, QC H1Y 1B1, CA</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@jph.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <h5 class="text-uppercase fw-bold mb-4 text-decoration-underline">
+                Contact
+              </h5>
+              <p>Montreal, QC H1Y 1B1, CA</p>
+              <p>info@jph.com</p>
+              <p>+ 01 234 567 88</p>
             </div>
             <!-- Grid column -->
           </div>

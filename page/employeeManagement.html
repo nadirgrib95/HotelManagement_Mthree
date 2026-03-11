@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jph.Com</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -27,7 +28,7 @@
           /></a>
           <button
             data-mdb-collapse-init
-            class="navbar-toggler"
+            class="navbar-toggler rounded-pill"
             type="button"
             data-mdb-target="#navbarExample01"
             aria-controls="navbarExample01"
@@ -63,40 +64,53 @@
       <!-- Navbar -->
     </header>
 
-    <section class="employee-section">
+    <section style="min-height: 40vh">
       <div class="container my-5">
-
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h2 class="mb-0">Employee Management Page</h2>
         </div>
 
         <div class="accordion jph-employee-accordion" id="employeeAccordion">
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse1" aria-expanded="true" aria-controls="employeeCollapse1">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse1"
+                aria-expanded="true"
+                aria-controls="employeeCollapse1"
+              >
                 <span class="fs-5">John Doe</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse1" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH001</p>
-                    <p> <strong>Role:</strong> Hotel Manager</p>
-                    <p> <strong>Email:</strong> john.doe@jph.com</p>
-                    <p> <strong>Department:</strong> Administration</p>
-                    <p> <strong>Employment Type:</strong> Full Time</p>
+                    <p><strong>Employee ID:</strong> JPH001</p>
+                    <p><strong>Role:</strong> Hotel Manager</p>
+                    <p><strong>Email:</strong> john.doe@jph.com</p>
+                    <p><strong>Department:</strong> Administration</p>
+                    <p><strong>Employment Type:</strong> Full Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -104,32 +118,46 @@
             </div>
           </div>
 
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse2" aria-expanded="true" aria-controls="employeeCollapse2">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse2"
+                aria-expanded="true"
+                aria-controls="employeeCollapse2"
+              >
                 <span class="fs-5">John Deer</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse2" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH002</p>
-                    <p> <strong>Role:</strong> Maintenance Tech</p>
-                    <p> <strong>Email:</strong> john.deer@jph.com</p>
-                    <p> <strong>Department:</strong> Engineering</p>
-                    <p> <strong>Employment Type:</strong> Full Time</p>
+                    <p><strong>Employee ID:</strong> JPH002</p>
+                    <p><strong>Role:</strong> Maintenance Tech</p>
+                    <p><strong>Email:</strong> john.deer@jph.com</p>
+                    <p><strong>Department:</strong> Engineering</p>
+                    <p><strong>Employment Type:</strong> Full Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -139,29 +167,44 @@
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse3" aria-expanded="true" aria-controls="employeeCollapse3">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse3"
+                aria-expanded="true"
+                aria-controls="employeeCollapse3"
+              >
                 <span class="fs-5">Daniel Brooks</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse3" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH003</p>
-                    <p> <strong>Role:</strong> Night Auditor</p>
-                    <p> <strong>Email:</strong> daniel.brooks@jph.com</p>
-                    <p> <strong>Department:</strong> Finance</p>
-                    <p> <strong>Employment Type:</strong> Full Time</p>
+                    <p><strong>Employee ID:</strong> JPH003</p>
+                    <p><strong>Role:</strong> Night Auditor</p>
+                    <p><strong>Email:</strong> daniel.brooks@jph.com</p>
+                    <p><strong>Department:</strong> Finance</p>
+                    <p><strong>Employment Type:</strong> Full Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -169,32 +212,46 @@
             </div>
           </div>
 
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse4" aria-expanded="true" aria-controls="employeeCollapse4">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse4"
+                aria-expanded="true"
+                aria-controls="employeeCollapse4"
+              >
                 <span class="fs-5">Jay Patel</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse4" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH004</p>
-                    <p> <strong>Role:</strong> Massage Therapist</p>
-                    <p> <strong>Email:</strong> jay.patel@jph.com</p>
-                    <p> <strong>Department:</strong> Wellness</p>
-                    <p> <strong>Employment Type:</strong> Internship</p>
+                    <p><strong>Employee ID:</strong> JPH004</p>
+                    <p><strong>Role:</strong> Massage Therapist</p>
+                    <p><strong>Email:</strong> jay.patel@jph.com</p>
+                    <p><strong>Department:</strong> Wellness</p>
+                    <p><strong>Employment Type:</strong> Internship</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -202,32 +259,46 @@
             </div>
           </div>
 
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse5" aria-expanded="true" aria-controls="employeeCollapse5">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse5"
+                aria-expanded="true"
+                aria-controls="employeeCollapse5"
+              >
                 <span class="fs-5">Pay Jatel</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse5" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH005</p>
-                    <p> <strong>Role:</strong> Concierge</p>
-                    <p> <strong>Email:</strong> pay.jatel@jph.com</p>
-                    <p> <strong>Department:</strong> Front Office</p>
-                    <p> <strong>Employment Type:</strong> Part Time</p>
+                    <p><strong>Employee ID:</strong> JPH005</p>
+                    <p><strong>Role:</strong> Concierge</p>
+                    <p><strong>Email:</strong> pay.jatel@jph.com</p>
+                    <p><strong>Department:</strong> Front Office</p>
+                    <p><strong>Employment Type:</strong> Part Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -235,32 +306,46 @@
             </div>
           </div>
 
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse6" aria-expanded="true" aria-controls="employeeCollapse6">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse6"
+                aria-expanded="true"
+                aria-controls="employeeCollapse6"
+              >
                 <span class="fs-5">Elena Rao</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse6" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH006</p>
-                    <p> <strong>Role:</strong> Housekeeping</p>
-                    <p> <strong>Email:</strong> elena.rao@jph.com</p>
-                    <p> <strong>Department:</strong> Operations</p>
-                    <p> <strong>Employment Type:</strong> Full Time</p>
+                    <p><strong>Employee ID:</strong> JPH006</p>
+                    <p><strong>Role:</strong> Housekeeping</p>
+                    <p><strong>Email:</strong> elena.rao@jph.com</p>
+                    <p><strong>Department:</strong> Operations</p>
+                    <p><strong>Employment Type:</strong> Full Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
@@ -268,41 +353,52 @@
             </div>
           </div>
 
-
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#employeeCollapse7" aria-expanded="true" aria-controls="employeeCollapse7">
+              <button
+                class="accordion-button collapsed d-flex justify-content-between align-items-center w-100 rounded-pill"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#employeeCollapse7"
+                aria-expanded="true"
+                aria-controls="employeeCollapse7"
+              >
                 <span class="fs-5">Bob Sample</span>
                 <i class="fas fa-chevron-down"></i>
               </button>
             </h2>
-            <div id="employeeCollapse7" class="accordion-collapse collapse" data-bs-parent="#employeeAccordion">
+            <div
+              id="employeeCollapse7"
+              class="accordion-collapse collapse"
+              data-bs-parent="#employeeAccordion"
+            >
               <div class="accordion-body">
                 <div class="row align-items-center">
                   <div class="col-md-8">
-                    <p> <strong>Employee ID:</strong> JPH007</p>
-                    <p> <strong>Role:</strong> Executive Chef</p>
-                    <p> <strong>Email:</strong> bob.sample@jph.com</p>
-                    <p> <strong>Department:</strong> Food & Beverage</p>
-                    <p> <strong>Employment Type:</strong> Full Time </p>
+                    <p><strong>Employee ID:</strong> JPH007</p>
+                    <p><strong>Role:</strong> Executive Chef</p>
+                    <p><strong>Email:</strong> bob.sample@jph.com</p>
+                    <p><strong>Department:</strong> Food & Beverage</p>
+                    <p><strong>Employment Type:</strong> Full Time</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn">Delete Entry</button>
+                      <button
+                        class="btn btn-outline-danger btn-sm delete-btn rounded-pill"
+                      >
+                        Delete Entry
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">
-                    <img src="/images/employee.jpg"
-                         alt="employee.jpeg"
-                         class="img-fluid rounded shadow-sm employee-photo"
+                    <img
+                      src="/images/employee.jpg"
+                      alt="employee.jpeg"
+                      class="img-fluid rounded shadow-sm employee-photo"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </section>
@@ -313,26 +409,31 @@
           <form id="employeeAddForm">
             <div class="mb-2">
               <label class="form-label">Full Name</label>
-              <input type="text" id="newName" class="form-control" required>
+              <input type="text" id="newName" class="form-control" required />
             </div>
             <div class="row">
               <div class="col-md-6 mb-2">
                 <label class="form-label">Employee ID</label>
-                <input type="text" id="newIdCode" class="form-control" required>
+                <input
+                  type="text"
+                  id="newIdCode"
+                  class="form-control"
+                  required
+                />
               </div>
               <div class="col-md-6 mb-2">
                 <label class="form-label">Role</label>
-                <input type="text" id="newRole" class="form-control" required>
+                <input type="text" id="newRole" class="form-control" required />
               </div>
             </div>
             <div class="mb-2">
               <label class="form-label">Email</label>
-              <input type="email" id="newEmail" class="form-control" required>
+              <input type="email" id="newEmail" class="form-control" required />
             </div>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label class="form-label">Department</label>
-                <input type="text" id="newDept" class="form-control" required>
+                <input type="text" id="newDept" class="form-control" required />
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Employment Type</label>
@@ -343,7 +444,13 @@
                 </select>
               </div>
             </div>
-            <button type="button" id="employeeSaveBtn" class="btn btn-primary w-100">Save Employee</button>
+            <button
+              type="button"
+              id="employeeSaveBtn"
+              class="btn btn-primary w-100 rounded-pill"
+            >
+              Save Employee
+            </button>
           </form>
         </div>
       </div>

@@ -14,7 +14,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/aboutUs.css" />
   </head>
   <body>
     <header class="header">
@@ -61,6 +61,94 @@
       </nav>
       <!-- Navbar -->
     </header>
+
+    <section class="about-us-section">
+      <div class="container my-5">
+        <div class="row g-5">
+
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">Get in Touch</h2>
+            <p class="text-muted">Have a question about guest services or management? Send us a message.</p>
+
+            <form class="mt-4">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control border-0 bg-light p-3" id="fullName" placeholder="John Doe">
+              </div>
+
+              <div class="mb-3">
+                <label for="emailAddr" class="form-label">Email Address</label>
+                <input type="email" class="form-control border-0 bg-light p-3" id="emailAddr" placeholder="name@gmail.com">
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select border-0 bg-light p-3" id="subject">
+                  <option selected>General Inquiry</option>
+                  <option value="1">Room Management Support</option>
+                  <option value="2">Staffing & Careers</option>
+                  <option value="3">Technical Issue</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control border-0 bg-light p-3" id="message" rows="5" placeholder="How can we help?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lg about-us-submit-btn w-100 text-white">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-5 rounded-4 h-100 text-white shadow-lg about-us-col">
+              <h3 class="mb-4">Contact Information</h3>
+              <p class="mb-5 opacity-75">Our management team is available Monday through Friday to assist with corporate and operational inquiries.</p>
+
+              <div class="d-flex mb-4">
+                <div class="me-3 fs-4"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <h6 class="mb-0">Headquarters</h6>
+                  <p class="small opacity-75">Montreal, QC, CA</p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-4">
+                <div class="me-3 fs-4"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <h6 class="mb-0">Phone</h6>
+                  <p class="small opacity-75">for legal reasons no phone numbers are inserted :))</p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-5">
+                <div class="me-3 fs-4"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <h6 class="mb-0">Email</h6>
+                  <p class="small opacity-75">info@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <h6 class="text-uppercase small fw-bold mb-3 opacity-50">Follow Us</h6>
+                <div class="d-flex gap-3 fs-5">
+                  <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
 
     <!-- Footer -->
     <footer class="footer text-center justify-content-center">

@@ -27,6 +27,9 @@
     }
 }
 
+.employee-section {
+    min-height: 40vh;
+}
 .jph-employee-accordion{
 
     .accordion-button {

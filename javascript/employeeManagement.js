@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p> <strong>Department:</strong> ${dept}</p>
                     <p> <strong>Employment Type:</strong> ${type}</p>
                     <div class="d-flex gap-2 mt-4">
-                      <button class="btn btn-outline-danger btn-sm delete-btn rounded-pill">Delete Entry</button>
+                      <button class="btn btn-outline-danger btn-sm delete-btn rounded-pill select-btn">Delete Entry</button>
                     </div>
                   </div>
                   <div class="col-md-4 text-center">

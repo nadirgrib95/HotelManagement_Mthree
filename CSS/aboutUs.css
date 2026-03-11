@@ -8,13 +8,18 @@
   display: block;
 }
 
-
-.search-btn {
-  background-color: rgb(25, 30, 59);
-  color: white;
+.about-us-section{
+  min-height: 40vh;
 }
 
-.search-btn:hover {
-  background-color: rgba(25, 30, 59, 0.8);
+.about-us-submit-btn {
+  background-color: #9CA4FF;
 }
 
+.about-us-submit-btn:hover {
+  background-color: #828BCF;
+}
+
+.about-us-col {
+  background-color: #2E3869;
+}
